@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Variables</title>
+</head>
+<body>
+
+    <span id = "usingVar"></span>
+    <span id = "usingLet"></span>
+    <span id = "usingConst"></span>
+    
+    <script>
+        // declaring and initiallizing variables
+        var variableUsingVAR = 10;
+        let variableUsingLET = 20;
+        const variableUsingCONST = 30;
+
+        console.log('Original value using VAR:' + variableUsingVAR);
+        console.log('Original value using LET:' + variableUsingLET);
+        console.log('Original value using CONST:' + variableUsingCONST);
+
+        // declaring and initiallizing variables
+        var variableUsingVAR = 20;          //redeclared same variable as above
+        // let variableUsingLET = 30;       //tried but cannot redeclare same variable let
+        // const variableUsingCONST = 40;   //tried but cannot redeclare or re-assign const
+
+        console.log('RE-ASSIGNED value using VAR:' + variableUsingVAR);
+        console.log(variableUsingLET);
+        console.log(variableUsingCONST);
+
+        variableUsingLET = 50;              //re-assigning value of variable using let
+        console.log(variableUsingLET);
+
+        {
+            let a = 1;
+            console.log(a);
+        }
+
+        console.log(a); //error because 'a' decleared with 'let' cannot be used outside the block
+
+</script>
+</body>
+</html>
